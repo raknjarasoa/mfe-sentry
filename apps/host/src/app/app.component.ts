@@ -11,4 +11,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'host';
+
+  constructor() {
+    setTimeout(() => {
+      // throw new Error('Njarasoa Test Error');
+      console.log((Math.PI as any)(0));
+    });
+  }
 }
